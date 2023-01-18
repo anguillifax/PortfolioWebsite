@@ -1,0 +1,154 @@
+/* Variables */
+
+nav {
+	--navbar-mobile-height: 50px;
+	--highlight-foreground: #1c1c1c;
+	--highlight-background: #d7d7d7;
+}
+
+/* Container */
+
+nav {
+	position: -webkit-sticky;
+	/* Safari */
+	position: sticky;
+	top: 0;
+	height: var(--navbar-mobile-height);
+	background-color: #444;
+	box-shadow: 0 2px 2px 0 #0001;
+	font-size: 1.2em;
+}
+
+nav>* {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav-name {
+	float: left;
+}
+
+.nav-content {
+	float: right;
+}
+
+nav a {
+	color: #eee;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+	nav {
+		padding: 0 5em;
+		height: 30px;
+		font-size: 1em;
+	}
+}
+
+/* Namecard */
+
+.nav-name {
+	font-weight: bold;
+	padding: 0 1em;
+}
+
+@media screen and (min-width: 600px) {
+	.nav-name {
+		padding: 0;
+	}
+}
+
+/* Icon */
+
+.nav-icon {
+	padding: 0.8em 1.0em;
+}
+
+nav .icon:hover {
+	background-color: var(--highlight-background);
+	color: var(--highlight-foreground);
+}
+
+@media screen and (min-width: 600px) {
+	nav .icon {
+		display: none;
+	}
+}
+
+/* Link Appearance */
+
+nav ul {
+	border-top: slategray 10px solid;
+	overflow: auto;
+	list-style-type: none;
+	background-color: #444;
+}
+
+nav li a {
+	display: block;
+	padding: 0.5em 3em;
+	text-align: center;
+}
+
+nav li a:hover {
+	background-color: var(--highlight-background);
+	color: var(--highlight-foreground);
+}
+
+/* Link Indicator */
+
+.nav-here {
+	background-color: slategray;
+}
+
+/* Link Separators */
+
+nav li {
+	border-bottom: #888 2px solid;
+}
+
+nav li:last-child {
+	border-bottom: none;
+}
+
+/* Link Toggle */
+
+#nav-links {
+	display: none;
+}
+
+#nav-links.nav-expanded {
+	display: block;
+	position: fixed;
+	top: var(--navbar-mobile-height);
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Expanded Horizontal Links */
+
+@media screen and (min-width: 600px) {
+	#nav-links {
+		display: block !important;
+		position: static !important;
+	}
+
+	nav ul {
+		overflow: hidden;
+		border-top: none;
+	}
+
+	nav li {
+		border: none;
+		display: inline;
+	}
+
+	nav li a {
+		display: inline;
+		--padding: .6em;
+		padding-left: var(--padding);
+		padding-right: var(--padding);
+	}
+}

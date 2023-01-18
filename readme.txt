@@ -1,4 +1,4 @@
---Readme document for *author*--
+--Readme document for Bryan Sturm 24222837 bsturm--
 
 A reminder on academic integrity, as described in the syllabus.
 
