@@ -1,49 +1,28 @@
 /* Banner */
 
 .header-image {
-	background-image: url("../home/banner.jpg"); /* Fallback */
-	background-position: center;
-	background-size: cover;
-	height: 160px;
-}
-
-.header-content {
-	margin-top: -160px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	background-image: url("../home/banner.jpg");
 }
 
 /* Author Photo */
 
-.author-photo-wrap {
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
+.author-photo {
+	width: 220px;
+	margin: 20px auto;
+	text-align: center;
 }
 
-.author-photo {
-	border: slategray 3px solid;
-	border-radius: 50%;
-}
-
-.author-photo {
+.author-photo img {
+	border-radius: 30%;
 	width: 150px;
 	height: 150px;
+	margin: 0 0 10px;
+	box-shadow: 0 0 4px #ffae164b;
 }
 
 @media screen and (min-width: 600px) {
-	.author-photo {
+	.author-photo img {
 		width: 120px;
 		height: 120px;
 	}
-}
-
-/* Author Description */
-
-.header-content p {
-	margin: 10px;
-	display: block;
-	text-align: center;
 }
