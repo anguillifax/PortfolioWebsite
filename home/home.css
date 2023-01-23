@@ -14,15 +14,15 @@
 
 .author-photo img {
 	border-radius: 30%;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	margin: 0 0 10px;
 	box-shadow: 0 0 4px #ffae164b;
 }
 
 @media screen and (min-width: 600px) {
 	.author-photo img {
-		width: 120px;
-		height: 120px;
+		width: 170px;
+		height: 170px;
 	}
 }
