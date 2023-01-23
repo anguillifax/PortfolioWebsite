@@ -29,14 +29,14 @@
 }
 
 .author-photo {
-	width: 120px;
-	height: 120px;
+	width: 150px;
+	height: 150px;
 }
 
 @media screen and (min-width: 600px) {
 	.author-photo {
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 	}
 }
 

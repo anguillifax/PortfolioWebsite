@@ -5,6 +5,7 @@ body {
 	--color-accent: #ff752b;
 	--color-support: #394945;
 	--color-link: #ff752b;
+	--color-example: #e9c74c;
 	--color-background: #212122;
 	--font-body: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-title: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -179,4 +180,25 @@ footer a {
 	.responsive-gallery figure {
 		padding: 0 8px;
 	}
+}
+
+/* Example List */
+
+.example-list {
+	list-style-type: none;
+}
+
+.example-list > li {
+	border-left: var(--color-example) 4px solid;
+	border-radius: 4px;
+	padding: 0 5%;
+	margin-bottom: 40px;
+}
+
+.example-list h3 {
+	color: var(--color-example);
+	font-family: var(--font-title);
+	font-weight: normal;
+	font-size: 2em;
+	margin-bottom: 0.2em;
 }

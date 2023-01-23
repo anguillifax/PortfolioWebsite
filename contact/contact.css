@@ -1,0 +1,16 @@
+.author-photo {
+	border-radius: 10px;
+	float: left;
+	height: 200px;
+	margin: 0 20px 8px 0;
+}
+
+@media screen and (min-width: 600px) {
+	.author-photo {
+		height: 250px;
+	}
+}
+
+i.fa {
+	color: var(--color-main);
+}
