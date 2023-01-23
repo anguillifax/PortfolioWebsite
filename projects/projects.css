@@ -1,0 +1,27 @@
+body {
+	--color-example: #e9c74c;
+}
+
+.example-list {
+	list-style-type: none;
+}
+
+.example-item {
+	border-left: var(--color-example) 4px solid;
+	border-radius: 4px;
+	padding: 0 5%;
+	margin-bottom: 40px;
+}
+
+.example-item iframe {
+	width: 99%;
+	max-width: 552px;
+}
+
+h3 {
+	color: var(--color-example);
+	font-family: var(--font-title);
+	font-weight: normal;
+	font-size: 2em;
+	margin-bottom: 0.2em;
+}

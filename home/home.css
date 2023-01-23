@@ -1,4 +1,11 @@
-/* Header Container */
+/* Banner */
+
+.header-image {
+	background-image: url("../home/banner.jpg"); /* Fallback */
+	background-position: center;
+	background-size: cover;
+	height: 160px;
+}
 
 .header-content {
 	margin-top: -160px;
@@ -6,40 +13,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-/* Banner */
-
-.header-image {
-	background-image: url("banner.jpg");
-	background-position: center;
-	background-size: cover;
-	height: 160px;
-}
-
-/* Page Title */
-
-h1 {
-	padding-top: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* @TODO google fonts */
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-weight: normal;
-	text-align: center;
-	color: white;
-	text-shadow: 0 3px 8px #0003;
-}
-
-h1 {
-	font-size: 4em;
-}
-
-@media screen and (min-width: 600px) {
-	h1 {
-		font-size: 3em;
-	}
 }
 
 /* Author Photo */
@@ -51,10 +24,20 @@ h1 {
 }
 
 .author-photo {
-	width: 100px;
-	height: 100px;
 	border: slategray 3px solid;
 	border-radius: 50%;
+}
+
+.author-photo {
+	width: 120px;
+	height: 120px;
+}
+
+@media screen and (min-width: 600px) {
+	.author-photo {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 /* Author Description */
@@ -63,60 +46,4 @@ h1 {
 	margin: 10px;
 	display: block;
 	text-align: center;
-}
-
-/* Sections */
-
-.section-1,
-.section-2,
-.section-3 {
-	border-top: seagreen 2px solid;
-	border-bottom: seagreen 2px solid;
-}
-
-h2 {
-	color: var(--color-accent);
-	padding: 0.6em 0;
-	font-size: 2em;
-	text-shadow: 0 0 3px #ffbc8f25;
-}
-
-/* Responsive Gallery */
-
-.responsive-gallery {
-	width: 80%;
-	margin: 0.5em auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.responsive-gallery figure {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.responsive-gallery figure > * {
-	width: 100%;
-	height: auto;
-}
-
-@media screen and (min-width: 600px) {
-	.responsive-gallery {
-		width: 100%;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.responsive-gallery figure {
-		padding: 0 8px;
-	}
-}
-
-/* Section Text */
-
-section p {
-	width: 80%;
-	margin: 0.6em auto;
-	line-height: 1.8em;
 }
